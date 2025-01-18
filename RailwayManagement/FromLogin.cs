@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace RailwayManagement
 {
-    public partial class Form1 : Form
+    public partial class FromLogin : Form
     {
-        public Form1()
+        public FromLogin()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        /*private void btnLogin_Click(object sender, EventArgs e)
         {
             try
             {
@@ -44,9 +44,9 @@ namespace RailwayManagement
                     MessageBox.Show("Valid User");
 
                     if (ds.Tables[0].Rows[0][3].ToString().Equals("admin"))
-                        new FormAdmin(name, this).Show();
+                        //new FormAdmin(name, this).Show();
                     else if (ds.Tables[0].Rows[0][3].ToString().Equals("member"))
-                        new FormMember(name, this).Show();
+                        //new FormMember(name, this).Show();
                 }
                 else
                 {
@@ -86,7 +86,7 @@ namespace RailwayManagement
         {
             this.txtUserId.Clear();
             this.txtPassword.Text = "";
-        }
+        }*/
     }
 }
     
